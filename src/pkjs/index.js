@@ -1,12 +1,13 @@
 Pebble.on('message', function(event) {
   // Get the message that was passed
   var message = event.data;
-
+  var stockSymbols = ['YHOO', 'GOOGL', 'AAPL'];
+  var randStockSymbol = stockSymbols[Math.floor(Math.random() * stockSymbols.length)];
   if (message.fetch) {
     
     var url = 'https://query.yahooapis.com/v1/public/yql' + 
         '?q=select * from yahoo.finance.quotes where symbol in ' +
-        '("YHOO")&format=json&env=store://datatables.org/alltableswithkeys&callback=';
+        '("'+randStockSymbol+'")&format=json&env=store://datatables.org/alltableswithkeys&callback=';
 
       request(url, 'GET', function(respText) {
         var stockData = JSON.parse(respText);

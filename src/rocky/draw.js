@@ -66,7 +66,7 @@ module.exports = {
   
       ctx.fillText(day, cx, cy, 30);
   },
-  drawStock: function drawWeather(ctx, stockData, cx, cy) {
+  drawStock: function drawStock(ctx, stockData, cx, cy) {
     // Create a string describing the weather
     var symbol = stockData.symbol;
     var Ask = 'Ask:' + stockData.Ask;
