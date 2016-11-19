@@ -15,7 +15,7 @@ rocky.on('draw', function(event) {
 
   drawAPI.drawDigital(ctx, w * (1/5) + 10, h * (1/5) - 5, 'white', '49px Roboto-subset' );
   drawAPI.drawDay(ctx,  w * (4/5) - 5, h * (1/5) - 15);
-  // Draw Weather on the bottom of the screen, if available
+  // Draw Stock on the bottom of the screen, if available
   if (stockData) {
     drawAPI.drawStock(ctx, stockData, w * (4/5) - 15, h * (3/5) - 10);
   }
