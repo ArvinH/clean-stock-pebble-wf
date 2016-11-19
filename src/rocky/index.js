@@ -37,7 +37,7 @@ rocky.on('message', function(event) {
   var message = event.data;
 
   if (message.stockData) {
-    // Save the weather data
+    // Save the stockData data
     stockData = message.stockData;
 
     // Request a redraw so we see the information
