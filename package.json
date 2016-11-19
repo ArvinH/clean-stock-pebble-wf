@@ -1,0 +1,25 @@
+{
+    "author": "arvin0731@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "cleanstock-pebble-wf",
+    "pebble": {
+        "displayName": "CleanStock-pebble-wf",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "rocky",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "diorite",
+            "emery"
+        ],
+        "uuid": "0c02a02f-60d4-4191-9a02-30f62ec91d5a",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
